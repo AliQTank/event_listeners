@@ -3,5 +3,9 @@ const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
 
 grandparent.addEventListener("click", e => {
-    console.log(e);
+    console.log("event one");
+})
+
+grandparent.addEventListener("click", e => {
+    console.log("event two");
 })
