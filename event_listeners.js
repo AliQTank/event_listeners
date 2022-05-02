@@ -3,9 +3,15 @@ const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
 
 grandparent.addEventListener("click", e => {
-    console.log("event one");
+    console.log("grandparent one");
 })
 
-grandparent.addEventListener("click", e => {
-    console.log("event two");
+parent.addEventListener("click", e => {
+    console.log("parent one");
 })
+
+child.addEventListener("click", e => {
+    console.log("child one");
+})
+
+
