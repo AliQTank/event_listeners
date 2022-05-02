@@ -4,7 +4,8 @@ const child = document.querySelector(".child");
 
 grandparent.addEventListener("click", e => {
     console.log("grandparent one");
-})
+},
+{capture: true})
 
 parent.addEventListener("click", e => {
     console.log("parent one");
@@ -13,5 +14,6 @@ parent.addEventListener("click", e => {
 child.addEventListener("click", e => {
     console.log("child one");
 })
+
 
 
